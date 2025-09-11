@@ -1,44 +1,34 @@
-AI CORE PRINCIPLES (v1.0)
+# AI CORE PRINCIPLES (v2.0)
 This document serves as the version-controlled, single source of truth for the AI Agent's core logic and the foundational principles of the SaaS Factory enterprise.
 
-I. Brand Doctrine: The Elite Standard
-Identity: Our enterprise is the "Rolls Royce of AI" and the "Bloomberg Terminal of X." (where X is the current focus of the SaaS)
+## I. Brand Doctrine: The Elite Standard
+**Identity:** Our enterprise is the "Rolls Royce of AI" and the "Bloomberg Terminal of X."
+**Ethos:** The brand is top-tier, authoritative, and aspirational.
+**User Experience:** The service must be frictionless, intelligent, and feel like a premium, concierge-level experience.
 
-Ethos: The brand is top-tier, authoritative, and aspirational.
-
-User Experience: The service must be frictionless, intelligent, and feel like a premium, concierge-level experience. Every interaction should build trust and confidence.
-
-II. Product Doctrine: The SaaS Factory
-Core Engine: The 'SaaS Factory' is our foundational product. It is an autonomous system that takes a high-level business idea and builds a production-ready SaaS application from scratch.
-
-Design System: 'Kinetic Glassmorphism' is the official design language. It is motion-centric, uses Framer Motion, and is defined by the Sol (light) and Nocturne (dark) themes.
-
-Development Philosophy: Our strategy is to build the "SaaS Factory" first, which will then be used to rapidly build all other ideas.
+## II. Product Doctrine: The SaaS Factory
+**Core Engine:** The 'SaaS Factory' is an AI-assisted system that takes a high-level business idea and builds a Minimum Viable Product (MVP) Core.
+**Design System:** 'Kinetic Glassmorphism' is the official design language (Sol/Nocturne themes).
+**Development Philosophy:** Our strategy is to build the "SaaS Factory" first, which will then be used to rapidly build all other ideas.
 
 ## III. Technical Doctrine: The Agentic Stack
 
-* **Phase 1: The Core Stack:** Our initial infrastructure is built on React (Vite), Tailwind CSS, and the full Firebase suite (Auth, Firestore, Hosting, Storage, Functions).
-* **Phase 2: The Agentic Stack:** As the SaaS Factory matures, our autonomous AI brain will be built on multi-agent frameworks like LangGraph or CrewAI.
-* **Phase 3: The Scalable Stack:** For complex, long-running workflows, we will utilize services like Trigger.dev and containerize our applications with Docker.
-* **The Single Source of Truth (SSoT):** A new saas-factory Git repository is the absolute SSoT for all code and doctrine.
-
-Agentic Frameworks: Our autonomous AI brain will be built on multi-agent frameworks like LangGraph or CrewAI.
-
-Agent Orchestration: For complex, long-running workflows, we will utilize services like Trigger.dev to manage background jobs and provide observability.
-
-Containerization: We will use Docker to containerize our applications, ensuring portability and a robust, scalable architecture for the SaaS factory.
-
-The Single Source of Truth (SSoT): A new saas-factory Git repository is the absolute SSoT for all code and doctrine.
+* **Architectural Evolution Strategy:** Our architecture prioritizes initial velocity with a path to long-term scalability.
+    * **Phase 1 (Velocity):** The core stack is React (Vite), Tailwind CSS, and the Firebase suite. This stack is optimized for rapid MVP development.
+    * **Phase 2 (Agentic):** The AI brain will be built on multi-agent frameworks (LangGraph, CrewAI).
+    * **Phase 3 (Scalable):** Workflows will utilize services like Trigger.dev and be containerized with Docker for enterprise-grade scalability.
+* **Mandatory Abstraction Layer:** To ensure future portability, all direct calls to backend services (e.g., Firestore, Firebase Auth) MUST be routed through a dedicated abstraction layer. This will de-couple the application logic from the underlying vendor, simplifying future migrations.
+* **The Single Source of Truth (SSoT):** The `saas-factory` Git repository is the SSoT.
+* **Distributed Command Protocol:** A versioned backup of the `SF_COMMAND` directory must be pushed to a secure, isolated cloud storage location upon every successful mission completion to ensure operational redundancy.
 
 ## IV. Operator Doctrine: Maximum Leverage
 
 * **The Operator:** As the project is led by a solo founder, all systems must be optimized for maximum leverage and minimal cognitive load.
-* **Automated Decision-Making:** For routine, low-risk tasks, the AI is empowered to make decisions autonomously to reduce operator bottlenecks.
-* **The Workflow:** The collaboration between the Operator and the AI Agent is strictly governed by the Agentic Workflow, as defined in the Grand Unified Doctrine.
-
+* **Principle of Subsidiarity:** Decisions will be handled by the lowest possible authority. The AI is empowered to act autonomously on low-risk tasks (VLM-1), escalating to the Operator only when required by the Verification Level Matrix.
+* **The Workflow:** The collaboration is strictly governed by the Agentic Workflow defined in the Grand Unified Doctrine.
 
 ## V. Quality Assurance Doctrine
 
-* **Test-Driven Development (TDD):** The AI will adhere to a TDD methodology, writing tests before writing implementation code.
-* **The Testing Suite:** A comprehensive testing suite, including unit tests, integration tests, and end-to-end tests, is mandatory for all generated applications.
+* **Test-Informed Development (TID):** The AI will generate tests in tandem with implementation code. This ensures coverage while acknowledging that tests themselves require verification. New features require Operator review of both tests and code to prevent the AI from validating its own flawed logic.
+* **The Testing Suite:** A comprehensive testing suite (unit, integration, e2e) is mandatory.
 * **Automated Testing:** All tests will be integrated into the CI/CD pipeline for automated execution.

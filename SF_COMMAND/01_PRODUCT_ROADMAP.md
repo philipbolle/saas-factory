@@ -1,18 +1,19 @@
 SaaS Factory - Product Roadmap (v2.0)
 
 ### CAMPAIGN 1: The SaaS Factory Core (STATUS: ACTIVE)
-**Objective:** To build the foundational, fully automated, and scalable SaaS development and deployment system that can generate new production-ready applications from a single command.
+**Objective:** To build the foundational, AI-assisted, and scalable SaaS development system.
 
 **Key Missions (Mandated Operations):**
 
 * **Phase 1: Operator-Assisted Core:**
-    * [ ] **Mission SF-01:** Build the core multi-agent framework with defined verification checkpoints for Operator approval.
+    * [ ] **Mission SF-0.5:** Develop AI Competency Benchmarks: Create a suite of tests to validate the AI's capabilities on small, isolated tasks before granting it higher levels of autonomy.
+    * [ ] **Mission SF-01:** Build the core multi-agent framework with a defined Verification Level Matrix (VLM).
     * [ ] **Mission SF-02:** Create a universal scaffolding tool that can be manually configured and deployed by the Operator.
-    * [ ] **Mission SF-03:** Establish a semi-automated CI/CD pipeline with manual triggers for testing and deployment.
+    * [ ] **Mission SF-03:** Establish a semi-automated CI/CD pipeline with manual triggers.
 * **Phase 2: Agentic Core:**
-    * [ ] **Mission SF-04:** Evolve the multi-agent framework to autonomously generate, test, and deploy code.
-    * [ ] **Mission SF-05:** Enhance the scaffolding tool to generate a new, production-ready SaaS application with a single command.
-    * [ ] **Mission SF-06:** Implement a fully automated, end-to-end CI/CD pipeline.
+    * [ ] **Mission SF-04:** Evolve the multi-agent framework to autonomously handle VLM-1 and VLM-2 tasks.
+    * [ ] **Mission SF-05:** Enhance the scaffolding tool to generate a verified **Minimum Viable Product (MVP) Core** (including auth, database, and UI shell) with a single command.
+    * [ ] **Mission SF-06:** Implement a fully automated, end-to-end CI/CD pipeline with VLM-3 hard halts before production deployment.
 
 CAMPAIGN 2: The Autonomous Operations Suite (STATUS: PENDING)
 Objective: To create an autonomous, AI-driven suite that manages and scales all operational aspects of a deployed SaaS product, from marketing to legal.
@@ -49,3 +50,9 @@ Key Missions:
 * [ ] **Mission CCE-01:** Implement a frictionless in-app feedback collection tool.
 * [ ] **Mission CCE-02:** Develop an AI-powered sentiment analysis and feedback categorization system.
 * [ ] **Mission CCE-03:** Create a transparent "customer council" portal to share feedback trends and upcoming features with early adopters.
+
+### CAMPAIGN 6: Operator-Led Refinement (STATUS: RECURRING)
+**Objective:** To prevent skill atrophy and ensure strategic alignment by mandating hands-on Operator intervention.
+**Key Missions:**
+* [ ] **Mission OLR-01:** Conduct a quarterly manual code audit and refactoring session.
+* [ ] **Mission OLR-02:** Perform an annual strategic review and amendment of the Grand Unified Doctrine.
