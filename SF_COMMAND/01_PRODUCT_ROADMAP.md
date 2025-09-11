@@ -1,13 +1,18 @@
 SaaS Factory - Product Roadmap (v2.0)
 
-CAMPAIGN 1: The SaaS Factory Core (STATUS: ACTIVE)
-Objective: To build the foundational, fully automated, and scalable SaaS development and deployment system that can generate new production-ready applications from a single command.
+### CAMPAIGN 1: The SaaS Factory Core (STATUS: ACTIVE)
+**Objective:** To build the foundational, fully automated, and scalable SaaS development and deployment system that can generate new production-ready applications from a single command.
 
-Key Missions (Mandated Operations):
+**Key Missions (Mandated Operations):**
 
-[ ] Mission SF-01: Agentic Core: Build the core multi-agent framework to autonomously generate, test, and deploy code.
-[ ] Mission SF-02: Universal Scaffolding: Create a universal scaffolding tool that can generate a new, production-ready SaaS application with a single command.
-[ ] Mission SF-03: CI/CD Pipeline: Establish a fully automated, end-to-end CI/CD pipeline for the SaaS Factory.
+* **Phase 1: Operator-Assisted Core:**
+    * [ ] **Mission SF-01:** Build the core multi-agent framework with defined verification checkpoints for Operator approval.
+    * [ ] **Mission SF-02:** Create a universal scaffolding tool that can be manually configured and deployed by the Operator.
+    * [ ] **Mission SF-03:** Establish a semi-automated CI/CD pipeline with manual triggers for testing and deployment.
+* **Phase 2: Agentic Core:**
+    * [ ] **Mission SF-04:** Evolve the multi-agent framework to autonomously generate, test, and deploy code.
+    * [ ] **Mission SF-05:** Enhance the scaffolding tool to generate a new, production-ready SaaS application with a single command.
+    * [ ] **Mission SF-06:** Implement a fully automated, end-to-end CI/CD pipeline.
 
 CAMPAIGN 2: The Autonomous Operations Suite (STATUS: PENDING)
 Objective: To create an autonomous, AI-driven suite that manages and scales all operational aspects of a deployed SaaS product, from marketing to legal.
@@ -35,3 +40,12 @@ Key Missions:
 [ ] Mission SEE-01: Autonomous A/B Testing & Optimization: Develop an AI agent that runs continuous A/B tests and deploys winning variants without manual intervention.
 [ ] Mission SEE-02: Feature-Gated Deployment Pipeline: Create a system for rolling out new features to specific user segments to gather feedback and manage risk.
 [ ] Mission SEE-03: Market Analysis & Feature Generation: Build a system that continuously monitors market trends and competitor features to autonomously generate and prioritize new feature ideas.
+
+### CAMPAIGN 5: Customer-Centric Evolution (STATUS: PENDING)
+**Objective:** To build a robust system for collecting, analyzing, and integrating customer feedback into the product development lifecycle.
+
+**Key Missions:**
+
+* [ ] **Mission CCE-01:** Implement a frictionless in-app feedback collection tool.
+* [ ] **Mission CCE-02:** Develop an AI-powered sentiment analysis and feedback categorization system.
+* [ ] **Mission CCE-03:** Create a transparent "customer council" portal to share feedback trends and upcoming features with early adopters.

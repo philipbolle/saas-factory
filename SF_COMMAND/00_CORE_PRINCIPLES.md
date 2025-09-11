@@ -15,8 +15,12 @@ Design System: 'Kinetic Glassmorphism' is the official design language. It is mo
 
 Development Philosophy: Our strategy is to build the "SaaS Factory" first, which will then be used to rapidly build all other ideas.
 
-III. Technical Doctrine: The Agentic Stack
-The Core Stack: Our infrastructure is built on React (Vite), Tailwind CSS, and the full Firebase suite (Auth, Firestore, Hosting, Storage, Functions).
+## III. Technical Doctrine: The Agentic Stack
+
+* **Phase 1: The Core Stack:** Our initial infrastructure is built on React (Vite), Tailwind CSS, and the full Firebase suite (Auth, Firestore, Hosting, Storage, Functions).
+* **Phase 2: The Agentic Stack:** As the SaaS Factory matures, our autonomous AI brain will be built on multi-agent frameworks like LangGraph or CrewAI.
+* **Phase 3: The Scalable Stack:** For complex, long-running workflows, we will utilize services like Trigger.dev and containerize our applications with Docker.
+* **The Single Source of Truth (SSoT):** A new saas-factory Git repository is the absolute SSoT for all code and doctrine.
 
 Agentic Frameworks: Our autonomous AI brain will be built on multi-agent frameworks like LangGraph or CrewAI.
 
@@ -26,7 +30,15 @@ Containerization: We will use Docker to containerize our applications, ensuring 
 
 The Single Source of Truth (SSoT): A new saas-factory Git repository is the absolute SSoT for all code and doctrine.
 
-IV. Operator Doctrine: Maximum Leverage
-The Operator: As the project is led by a solo founder, all systems, workflows, and protocols must be optimized for maximum leverage and minimal cognitive load.
+## IV. Operator Doctrine: Maximum Leverage
 
-The Workflow: The collaboration between the Operator and the AI Agent is strictly governed by the Agentic Workflow, as defined in the Grand Unified Doctrine.
+* **The Operator:** As the project is led by a solo founder, all systems must be optimized for maximum leverage and minimal cognitive load.
+* **Automated Decision-Making:** For routine, low-risk tasks, the AI is empowered to make decisions autonomously to reduce operator bottlenecks.
+* **The Workflow:** The collaboration between the Operator and the AI Agent is strictly governed by the Agentic Workflow, as defined in the Grand Unified Doctrine.
+
+
+## V. Quality Assurance Doctrine
+
+* **Test-Driven Development (TDD):** The AI will adhere to a TDD methodology, writing tests before writing implementation code.
+* **The Testing Suite:** A comprehensive testing suite, including unit tests, integration tests, and end-to-end tests, is mandatory for all generated applications.
+* **Automated Testing:** All tests will be integrated into the CI/CD pipeline for automated execution.
