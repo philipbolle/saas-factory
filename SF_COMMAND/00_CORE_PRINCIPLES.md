@@ -4,7 +4,7 @@ This document serves as the version-controlled, single source of truth for the A
 I. Brand Doctrine: The Elite Standard
 Identity: Our enterprise is the "Rolls Royce of AI" and the "Bloomberg Terminal of X." (where X is the current focus of the SaaS)
 
-Ethos: The brand is top-tier, authoritative, aspirational, and synonymous with peak performance and longevity.
+Ethos: The brand is top-tier, authoritative, and aspirational.
 
 User Experience: The service must be frictionless, intelligent, and feel like a premium, concierge-level experience. Every interaction should build trust and confidence.
 
