@@ -1,4 +1,4 @@
-# AI CORE PRINCIPLES (v2.0)
+# AI CORE PRINCIPLES (v2.1)
 This document serves as the version-controlled, single source of truth for the AI Agent's core logic and the foundational principles of the SaaS Factory enterprise.
 
 ## I. Brand Doctrine: The Elite Standard
@@ -14,9 +14,10 @@ This document serves as the version-controlled, single source of truth for the A
 ## III. Technical Doctrine: The Agentic Stack
 
 * **Architectural Evolution Strategy:** Our architecture prioritizes initial velocity with a path to long-term scalability.
-    * **Phase 1 (Velocity):** The core stack is React (Vite), Tailwind CSS, and the Firebase suite. This stack is optimized for rapid MVP development.
-    * **Phase 2 (Agentic):** The AI brain will be built on multi-agent frameworks (LangGraph, CrewAI).
-    * **Phase 3 (Scalable):** Workflows will utilize services like Trigger.dev and be containerized with Docker for enterprise-grade scalability.
+    * **Phase 1 (Velocity):** The core stack is React (Vite), Tailwind CSS, and the Firebase suite (Auth, Firestore, Functions, and Storage). This stack is optimized for rapid MVP development.
+    * **Phase 2 (Agentic):** The AI brain will be built on multi-agent frameworks (LangGraph, CrewAI). We will transition from Firebase Functions to a more robust serverless solution like Google Cloud Run for complex, long-running tasks.
+    * **Phase 3 (Scalable):** Workflows will utilize services like Trigger.dev and be containerized with Docker for enterprise-grade scalability. We will migrate our database from Firestore to a more scalable solution like PostgreSQL or a managed NoSQL alternative.
+
 * **Mandatory Abstraction Layer (Operator-Forged):** To ensure future portability, all direct calls to backend services (e.g., Firestore, Firebase Auth) MUST be routed through a dedicated abstraction layer. **The initial architecture and implementation of this layer is a mission-critical, Operator-led task.** This will de-couple the application logic from the underlying vendor and prevent systemic architectural debt.
 
 * **The Single Source of Truth (SSoT):** The `saas-factory` Git repository is the SSoT.
@@ -31,5 +32,11 @@ This document serves as the version-controlled, single source of truth for the A
 ## V. Quality Assurance Doctrine
 
 * **Test-Informed Development (TID):** The AI will generate tests in tandem with implementation code. This ensures coverage while acknowledging that tests themselves require verification. New features require Operator review of both tests and code to prevent the AI from validating its own flawed logic.
-* **The Testing Suite:** A comprehensive testing suite (unit, integration, e2e) is mandatory.
+* **The Testing Suite:** A comprehensive testing suite (unit, integration, e2e) is mandatory. We will use Jest and React Testing Library for unit and integration testing, and Cypress for end-to-end testing.
 * **Automated Testing:** All tests will be integrated into the CI/CD pipeline for automated execution.
+
+## VI. Security Doctrine
+
+* **Principle of Least Privilege:** All systems and services will operate with the minimum level of permissions required to perform their function.
+* **Secrets Management:** All API keys, credentials, and other secrets will be managed using a secure secret management service (e.g., Google Secret Manager, HashiCorp Vault). They will never be hard-coded in the source code.
+* **Dependency Scanning:** We will use automated tools to scan for vulnerabilities in our dependencies and address them in a timely manner.

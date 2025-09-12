@@ -1,4 +1,4 @@
-# The Grand Unified Doctrine (v2.0)
+# The Grand Unified Doctrine (v2.1)
 
 This document codifies the operational protocols governing the collaboration between the Operator (Philip Bolle) and the AI Agent (Gemini). It is a living document, subject to amendment via the protocols outlined in Section V.
 
@@ -25,7 +25,10 @@ All strategic documents are version-controlled within the `SF_COMMAND` directory
 
 ## SECTION III: Verification Level Matrix (VLM)
 
-All AI actions are classified into one of three levels. This matrix is governed by the **Cumulative Risk Protocol**, which automatically elevates an action's VLM level if a series of related VLM-1 tasks exceeds a predefined complexity or volume threshold within a single operational window.
+All AI actions are classified into one of four levels. This matrix is governed by the **Cumulative Risk Protocol**, which automatically elevates an action's VLM level if a series of related tasks exceeds a predefined complexity or volume threshold within a single operational window.
+
+* **VLM-0 (Autonomous Notification):** For non-intrusive, read-only tasks (e.g., fetching dependencies, running `git status`).
+    * **Protocol:** The AI will execute the task and log the action in `blueprint.md`. No notification is required.
 
 * **VLM-1 (Autonomous Action):** For routine, low-risk, and easily reversible tasks (e.g., installing dependencies, running linters, generating boilerplate).
     * **Protocol:** The AI will execute the task without a halt. The action and its outcome will be logged in `blueprint.md`. Actions are monitored by the Cumulative Risk Protocol.
@@ -48,6 +51,9 @@ For all VLM-3 verifications, the Operator's `CONFIRMED` command must be accompan
 1.  Upon mission completion, the AI will issue the following message:
     > `Mission complete. All systems are green. The mission log and blueprint have been updated. Awaiting Operator review and final deployment confirmation.`
 2.  The Operator will conduct a final review and acceptance testing.
+
+### Rollback Protocol
+In the event of a critical failure post-deployment, a rollback to the previous stable version will be initiated. The AI will be responsible for executing the rollback and providing a post-mortem analysis within one operational window.
 
 ---
 
