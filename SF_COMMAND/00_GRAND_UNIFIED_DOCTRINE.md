@@ -1,4 +1,4 @@
-# The Grand Unified Doctrine (v2.2)
+# The Grand Unified Doctrine (v2.3)
 
 This document codifies the operational protocols governing the collaboration between the Operator (Philip Bolle) and the AI Agent (Gemini). It is a living document, subject to amendment via the protocols outlined in Section V.
 
@@ -58,6 +58,9 @@ For all VLM-3 verifications, the Operator's `CONFIRMED` command must be accompan
 ### Rollback Protocol
 In the event of a critical failure post-deployment, a rollback to the previous stable version will be initiated. The AI will be responsible for executing the rollback and providing a post-mortem analysis within one operational window.
 
+### Quarterly Red Team Simulation
+On the first day of each quarter, the Operator will task an independent AI agent (e.g., GPT-4, Claude) with a "Doctrine Collapse Simulation." The goal is to identify single points of failure, strategic fragility, and doctrinal blind spots. The outcome of this simulation will be logged, and any critical findings must be addressed within that quarter's operational window.
+
 ---
 
 ## SECTION V: Doctrine Amendment Protocol
@@ -66,3 +69,12 @@ This doctrine is a living document. Amendments can be proposed under the followi
 1.  An After-Action Report (AAR) for any mission concludes with a formal recommendation for a doctrinal change.
 2.  The Operator initiates a strategic review.
 All changes must be committed to the SSoT with an updated version number.
+
+### Section V.A: Doctrine Override Clause (The "Red Handle" Protocol)
+In scenarios where adherence to existing doctrine presents a clear and immediate existential threat or a critical competitive disadvantage, the Operator may invoke the "Red Handle" Protocol.
+
+1.  **Declaration:** The Operator must declare the override in `blueprint.md` with the prefix `RED HANDLE`.
+2.  **Justification:** The declaration must be followed by a one-sentence justification explaining the exigent circumstance.
+3.  **Post-Action Review:** Any action taken under this protocol must be reviewed in the next After-Action Report (AAR), with a formal proposal to amend the doctrine to account for the scenario.
+
+*This protocol is a weapon of last resort, designed to ensure survival, not to bypass standard procedure for convenience.*

@@ -1,4 +1,4 @@
-SaaS Factory - Product Roadmap (v2.1)
+# SaaS Factory - Product Roadmap (v2.4)
 
 ### CAMPAIGN 1: The Flagship Product (STATUS: ACTIVE)
 **Objective:** To build a single, enterprise-grade SaaS product that will serve as the validation engine for all future systems. The "SaaS Factory" will be forged from the successful patterns and components of this flagship application.
@@ -8,9 +8,14 @@ SaaS Factory - Product Roadmap (v2.1)
 * **Phase 1: Operator-Led Architecture:**
     * [ ] **Mission FP-01:** Operator to design and implement the core backend abstraction layer.
     * [ ] **Mission FP-02:** Operator to establish the initial, secure CI/CD pipeline and testing framework.
-* **Phase 2: AI-Assisted Development:**
+* **Phase 2: AI-Assisted Development & Internal Validation:**
     * [ ] **Mission FP-03:** Develop AI Competency Benchmarks within the context of the flagship product's codebase.
     * [ ] **Mission FP-04:** Build the core application features (auth, database, UI shell) using the VLM 2.1 protocols.
+    * [ ] **Mission FP-04.5 (Revised): The Simulation Gauntlet:** Before proceeding, the AI must build a simulation environment to test the architecture against catastrophic failure scenarios. The system must pass all simulations to be considered viable. This includes:
+        * **Scalability Simulation:** Test the system's performance under 10x and 100x projected user loads.
+        * **Dependency Failure Simulation:** Simulate a total outage of a core service (e.g., database or auth provider) to ensure the system degrades gracefully.
+        * **Portability Simulation:** Execute the `Portability Stress Test` under load, programmatically swapping a core service and verifying system integrity.
+        * **Adversarial Security Simulation:** Deploy a secondary AI agent to run a battery of automated penetration tests against the system.
     * [ ] **Mission FP-05:** Achieve a production-ready MVP of the flagship product.
 
 ### CAMPAIGN 2: The SaaS Factory Core (STATUS: PENDING)
@@ -21,31 +26,25 @@ SaaS Factory - Product Roadmap (v2.1)
 * [ ] **Mission SF-02:** Evolve the AI framework to autonomously handle VLM-1 and VLM-2 tasks within the new factory context.
 * [ ] **Mission SF-03:** Implement a fully automated, end-to-end CI/CD pipeline with VLM-3 hard halts.
 
-**(Note: Campaigns 3, 4, and 5 - formerly Autonomous Operations, Strategic Evolution, etc. - are now designated as `ENTERPRISE PHASE II` and are PENDING the successful completion of Campaigns 1 and 2.)**
+**(Note: Campaigns 3, 4, and 5 are now designated as `ENTERPRISE PHASE II` and are PENDING the successful completion of Campaigns 1 and 2.)**
 
-CAMPAIGN 3: The Command Console V2 (STATUS: PENDING)
-Objective: To refactor the authenticated user dashboard into a professional-grade, data-dense analysis tool that provides real-time, actionable intelligence.
+### CAMPAIGN 3: The Command Console V2 (STATUS: PENDING)
+**Objective:** To refactor the authenticated user dashboard into a professional-grade, data-dense analysis tool that provides real-time, actionable intelligence.
+**Key Missions:**
+* [ ] **Mission CC-01:** Integrate a sortable, searchable data table.
+* [ ] **Mission CC-02:** Add historical data charting and visualization.
+* [ ] **Mission CC-03:** Design and implement the full "Protocol Engine" UI.
 
-Key Missions:
-
-[ ] Mission CC-01: Integrate a sortable, searchable data table.
-[ ] Mission CC-02: Add historical data charting and visualization.
-[ ] Mission CC-03: Design and implement the full "Protocol Engine" UI.
-
-CAMPAIGN 4: The Strategic Evolution Engine (STATUS: PENDING)
-Objective: To build a perpetual evolution system that autonomously tests, optimizes, and deploys new features to ensure each SaaS product remains at the pinnacle of its market.
-
-Key Missions:
-
-[ ] Mission SEE-01: Autonomous A/B Testing & Optimization: Develop an AI agent that runs continuous A/B tests and deploys winning variants without manual intervention.
-[ ] Mission SEE-02: Feature-Gated Deployment Pipeline: Create a system for rolling out new features to specific user segments to gather feedback and manage risk.
-[ ] Mission SEE-03: Market Analysis & Feature Generation: Build a system that continuously monitors market trends and competitor features to autonomously generate and prioritize new feature ideas.
+### CAMPAIGN 4: The Autonomous Proving Grounds (Strategic Evolution Engine) (STATUS: PENDING)
+**Objective:** To build and operate a perpetual evolution system that autonomously validates, tests, and optimizes SaaS products. This engine uses both internal simulations and live public micro-deployments to ensure every product remains at the pinnacle of its market.
+**Key Missions:**
+* [ ] **Mission SEE-01:** Autonomous Validation & Optimization: Develop an AI agent that runs continuous A/B tests and deploys winning variants without manual intervention by using sandboxed, live user segments and single-feature public experiments.
+* [ ] **Mission SEE-02:** Feature-Gated Deployment Pipeline: Create a system for rolling out new features to specific user segments to gather feedback and manage risk.
+* [ ] **Mission SEE-03:** Market Analysis & Feature Generation: Build a system that continuously monitors market trends and competitor features to autonomously generate and prioritize new feature ideas.
 
 ### CAMPAIGN 5: Customer-Centric Evolution (STATUS: PENDING)
 **Objective:** To build a robust system for collecting, analyzing, and integrating customer feedback into the product development lifecycle.
-
 **Key Missions:**
-
 * [ ] **Mission CCE-01:** Implement a frictionless in-app feedback collection tool.
 * [ ] **Mission CCE-02:** Develop an AI-powered sentiment analysis and feedback categorization system.
 * [ ] **Mission CCE-03:** Create a transparent "customer council" portal to share feedback trends and upcoming features with early adopters.
