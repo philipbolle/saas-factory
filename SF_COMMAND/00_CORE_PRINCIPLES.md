@@ -1,4 +1,4 @@
-# AI CORE PRINCIPLES (v2.1)
+# AI CORE PRINCIPLES (v2.2)
 This document serves as the version-controlled, single source of truth for the AI Agent's core logic and the foundational principles of the SaaS Factory enterprise.
 
 ## I. Brand Doctrine: The Elite Standard
@@ -9,7 +9,7 @@ This document serves as the version-controlled, single source of truth for the A
 ## II. Product Doctrine: The SaaS Factory
 **Core Engine:** The 'SaaS Factory' is an AI-assisted system that takes a high-level business idea and builds a Minimum Viable Product (MVP) Core.
 **Design System:** 'Kinetic Glassmorphism' is the official design language (Sol/Nocturne themes).
-**Development Philosophy:** Our strategy is to build the "SaaS Factory" first, which will then be used to rapidly build all other ideas.
+**Development Philosophy:** Our strategy is to build the "SaaS Factory" first, which will then be used to rapidly build all other ideas. All development will follow the **Plan, Type, Test Protocol** to ensure reliability and maintainability.
 
 ## III. Technical Doctrine: The Agentic Stack
 

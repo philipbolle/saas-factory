@@ -1,4 +1,4 @@
-# The Grand Unified Doctrine (v2.1)
+# The Grand Unified Doctrine (v2.2)
 
 This document codifies the operational protocols governing the collaboration between the Operator (Philip Bolle) and the AI Agent (Gemini). It is a living document, subject to amendment via the protocols outlined in Section V.
 
@@ -17,7 +17,10 @@ All strategic documents are version-controlled within the `SF_COMMAND` directory
 
 1.  **Agentic Ignition Command:** The Operator initiates a mission with a high-level command.
     > `Commander, reporting for duty. The primary source of truth is located at [Repo Link]. The next mission is... [Mission Objective].`
-2.  **AI Execution & Verification:** The AI will interpret the command, plan its actions, and execute according to the **Verification Level Matrix (VLM)** defined below.
+2.  **AI Execution & Verification:** The AI will interpret the command and execute using the **Plan, Type, Test Protocol** according to the Verification Level Matrix (VLM) defined below.
+    * **Phase A (Plan):** Create a detailed, step-by-step execution plan in `blueprint.md`, outlining the required architecture, file structure, and components.
+    * **Phase B (Type):** Define all necessary data structures, types, and interfaces before implementation. This provides a clear contract for the code to follow.
+    * **Phase C (Test):** Generate unit and integration tests based on the plan and types. The implementation must satisfy these tests.
 3.  **Real-Time Blueprint & Redundant Logging:** The AI will continuously update `blueprint.md`. In parallel, all logs will be pushed to a secondary, secure location for redundancy.
 4.  **Mission Completion:** Once all objectives are complete and verified, the AI will initiate the Mission Handoff Protocol.
 
