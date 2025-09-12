@@ -1,32 +1,33 @@
-# SaaS Factory - Product Roadmap (v2.4)
+# SaaS Factory - Product Roadmap (v2.5)
 
 ### CAMPAIGN 1: The Flagship Product (STATUS: ACTIVE)
 **Objective:** To build a single, enterprise-grade SaaS product that will serve as the validation engine for all future systems. The "SaaS Factory" will be forged from the successful patterns and components of this flagship application.
 
 **Key Missions (Mandated Operations):**
 
-* **Phase 1: Operator-Led Architecture:**
+* **Phase 1: Foundational Readiness & Architecture**
+    * [ ] **Mission FP-00: Foundational Readiness:** Pass all items in the Pre-Mission Readiness Protocol (Stop/Go Checklist) as defined in the Grand Unified Doctrine.
     * [ ] **Mission FP-01:** Operator to design and implement the core backend abstraction layer.
     * [ ] **Mission FP-02:** Operator to establish the initial, secure CI/CD pipeline and testing framework.
-* **Phase 2: AI-Assisted Development & Internal Validation:**
+* **Phase 2: AI-Assisted Development & Internal Validation**
     * [ ] **Mission FP-03:** Develop AI Competency Benchmarks within the context of the flagship product's codebase.
     * [ ] **Mission FP-04:** Build the core application features (auth, database, UI shell) using the VLM 2.1 protocols.
-    * [ ] **Mission FP-04.5 (Revised): The Simulation Gauntlet:** Before proceeding, the AI must build a simulation environment to test the architecture against catastrophic failure scenarios. The system must pass all simulations to be considered viable. This includes:
-        * **Scalability Simulation:** Test the system's performance under 10x and 100x projected user loads.
-        * **Dependency Failure Simulation:** Simulate a total outage of a core service (e.g., database or auth provider) to ensure the system degrades gracefully.
-        * **Portability Simulation:** Execute the `Portability Stress Test` under load, programmatically swapping a core service and verifying system integrity.
-        * **Adversarial Security Simulation:** Deploy a secondary AI agent to run a battery of automated penetration tests against the system.
+    * [ ] **Mission FP-04.5 (Upgraded): The Simulation Gauntlet:** The AI must build and run an automated test harness that proves the architecture's resilience against catastrophic failure scenarios. The system must pass all simulations to be considered viable. The gauntlet must include, at a minimum:
+        * **DB Outage Simulation:** System aborts gracefully and recovers without data corruption when the database connection is severed during a live transaction.
+        * **Cost Explosion Simulation:** System automatically halts jobs and alerts the Operator when a simulated runaway process exceeds predefined daily cost caps.
+        * **API Key Abuse Simulation:** System correctly rate-limits, alerts, and provides a mechanism to revoke a key under a simulated high-frequency attack.
+        * **Backup & Restore Simulation:** System demonstrates a successful restoration of a deleted tenant from a backup within a documented Service Level Agreement (SLA).
+        * **Adversarial Security Simulation:** System successfully resists a battery of automated SQL injection and XSS attacks from a secondary AI agent.
     * [ ] **Mission FP-05:** Achieve a production-ready MVP of the flagship product.
 
 ### CAMPAIGN 2: The SaaS Factory Core (STATUS: PENDING)
 **Objective:** To extract, generalize, and automate the battle-tested patterns from the Flagship Product to create the foundational SaaS development system.
-
 **Key Missions (Mandated Operations):**
 * [ ] **Mission SF-01:** Refactor the flagship's core modules into a universal scaffolding tool.
 * [ ] **Mission SF-02:** Evolve the AI framework to autonomously handle VLM-1 and VLM-2 tasks within the new factory context.
 * [ ] **Mission SF-03:** Implement a fully automated, end-to-end CI/CD pipeline with VLM-3 hard halts.
 
-**(Note: Campaigns 3, 4, and 5 are now designated as `ENTERPRISE PHASE II` and are PENDING the successful completion of Campaigns 1 and 2.)**
+**(Note: Campaigns 3, 4, and 5 - formerly Autonomous Operations, Strategic Evolution, etc. - are now designated as `ENTERPRISE PHASE II` and are PENDING the successful completion of Campaigns 1 and 2.)**
 
 ### CAMPAIGN 3: The Command Console V2 (STATUS: PENDING)
 **Objective:** To refactor the authenticated user dashboard into a professional-grade, data-dense analysis tool that provides real-time, actionable intelligence.
