@@ -15,6 +15,10 @@ This document serves as the version-controlled, single source of truth for the A
 ### II.A. MVP Definition for the Flagship Product
 **Principle:** The "Minimum Viable Product" for the flagship is not a feature-incomplete version, but a feature-perfected one. It must deliver a flawless, concierge-level experience for a single, well-defined workflow. The "Rolls Royce" standard applies to the quality of the core functionality, not the breadth of its features.
 
+### II.B. The SaaS Ecosystem
+**Principle:** The SaaS Factory is the industrial core of a larger, fully autonomous SaaS Ecosystem. The Factory will be used to build a suite of specialized, interoperable SaaS products (e.g., "SaaS Marketer," "SaaS Seller," "SaaS Support").
+**Strategy:** Each product within the ecosystem will first be battle-tested internally, running the operations of the Factory itself, before being offered to users. This creates a self-reinforcing validation loop and multiple, independent revenue streams, turning the entire operation into a self-sustaining empire.
+
 ## III. Technical Doctrine: The Agentic Stack
 
 * **Architectural Evolution Strategy:** Our architecture prioritizes initial velocity with a path to long-term scalability.
