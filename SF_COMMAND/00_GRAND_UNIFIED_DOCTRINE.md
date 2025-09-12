@@ -1,4 +1,4 @@
-# The Grand Unified Doctrine (v2.5)
+# The Grand Unified Doctrine (v2.6)
 
 This document codifies the operational protocols governing the collaboration between the Operator (Philip Bolle) and the AI Agent (Gemini). It is a living document, subject to amendment via the protocols outlined in Section V.
 
@@ -47,6 +47,7 @@ All AI actions are classified into one of four levels. This matrix is governed b
 
 * **VLM-3 (Hard Halt & Verify):** For high-risk, irreversible, or mission-critical actions (e.g., production deployment, database migration, credential management, core architectural changes).
     * **Protocol:** The AI will halt all execution and issue a verification request: `VLM-3 Verification Required: [Detailed summary of action and rationale, including peer review report]. Awaiting Operator confirmation.` Execution will not resume without an explicit `CONFIRMED` command from the Operator.
+    * **Foundation Review Clause:** If the AI determines that a foundational element established by the Operator (e.g., an architectural pattern, a CI/CD configuration) is a significant blocker to mission success, it is authorized to issue a `VLM-3 Verification Request` to propose a necessary amendment. This ensures that Operator-forged components are subject to the same rigorous validation as AI-generated ones.
 
 ---
 
