@@ -17,14 +17,15 @@ This document serves as the version-controlled, single source of truth for the A
     * **Phase 1 (Velocity):** The core stack is React (Vite), Tailwind CSS, and the Firebase suite. This stack is optimized for rapid MVP development.
     * **Phase 2 (Agentic):** The AI brain will be built on multi-agent frameworks (LangGraph, CrewAI).
     * **Phase 3 (Scalable):** Workflows will utilize services like Trigger.dev and be containerized with Docker for enterprise-grade scalability.
-* **Mandatory Abstraction Layer:** To ensure future portability, all direct calls to backend services (e.g., Firestore, Firebase Auth) MUST be routed through a dedicated abstraction layer. This will de-couple the application logic from the underlying vendor, simplifying future migrations.
+* **Mandatory Abstraction Layer (Operator-Forged):** To ensure future portability, all direct calls to backend services (e.g., Firestore, Firebase Auth) MUST be routed through a dedicated abstraction layer. **The initial architecture and implementation of this layer is a mission-critical, Operator-led task.** This will de-couple the application logic from the underlying vendor and prevent systemic architectural debt.
+
 * **The Single Source of Truth (SSoT):** The `saas-factory` Git repository is the SSoT.
 * **Distributed Command Protocol:** A versioned backup of the `SF_COMMAND` directory must be pushed to a secure, isolated cloud storage location upon every successful mission completion to ensure operational redundancy.
 
-## IV. Operator Doctrine: Maximum Leverage
+## IV. Operator Doctrine: Strategic Oversight
 
-* **The Operator:** As the project is led by a solo founder, all systems must be optimized for maximum leverage and minimal cognitive load.
-* **Principle of Subsidiarity:** Decisions will be handled by the lowest possible authority. The AI is empowered to act autonomously on low-risk tasks (VLM-1), escalating to the Operator only when required by the Verification Level Matrix.
+* **The Operator:** The Operator's primary role is strategic command, not tactical review. Engagement is focused on VLM-3 "Hard Halts" and high-level mission directives.
+* **Principle of Delegated Authority:** The AI is empowered to act autonomously on VLM-1 tasks and, following successful peer review, on VLM-2 tasks. This delegation is subject to continuous performance monitoring.
 * **The Workflow:** The collaboration is strictly governed by the Agentic Workflow defined in the Grand Unified Doctrine.
 
 ## V. Quality Assurance Doctrine

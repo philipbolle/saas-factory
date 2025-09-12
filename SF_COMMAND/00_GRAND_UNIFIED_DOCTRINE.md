@@ -25,14 +25,16 @@ All strategic documents are version-controlled within the `SF_COMMAND` directory
 
 ## SECTION III: Verification Level Matrix (VLM)
 
-All AI actions are classified into one of three levels, dictating the required protocol.
+All AI actions are classified into one of three levels. This matrix is governed by the **Cumulative Risk Protocol**, which automatically elevates an action's VLM level if a series of related VLM-1 tasks exceeds a predefined complexity or volume threshold within a single operational window.
 
 * **VLM-1 (Autonomous Action):** For routine, low-risk, and easily reversible tasks (e.g., installing dependencies, running linters, generating boilerplate).
-    * **Protocol:** The AI will execute the task without a halt. The action and its outcome will be logged in `blueprint.md`.
-* **VLM-2 (Notify & Proceed):** For medium-risk tasks that have operational significance but are not irreversible (e.g., creating new components, non-destructive schema changes, generating new tests).
-    * **Protocol:** The AI will issue a notification: `VLM-2 Notification: [Summary of action]. Proceeding in [T-minus time]. Operator intervention will halt.` The AI proceeds unless the Operator issues a `HALT` command.
+    * **Protocol:** The AI will execute the task without a halt. The action and its outcome will be logged in `blueprint.md`. Actions are monitored by the Cumulative Risk Protocol.
+
+* **VLM-2 (Peer Review & Proceed):** For medium-risk tasks that have operational significance but are not irreversible (e.g., creating new components, non-destructive schema changes, generating new tests).
+    * **Protocol:** Before execution, the proposed code or action will be submitted to a secondary, sandboxed AI agent for an automated peer review. This review checks for logical flaws, security vulnerabilities, and adherence to doctrine. Upon successful peer review, the AI will issue a notification: `VLM-2 Notification: [Summary of action]. Peer review passed. Proceeding in [T-minus time]. Operator intervention will halt.`
+
 * **VLM-3 (Hard Halt & Verify):** For high-risk, irreversible, or mission-critical actions (e.g., production deployment, database migration, credential management, core architectural changes).
-    * **Protocol:** The AI will halt all execution and issue a verification request: `VLM-3 Verification Required: [Detailed summary of action and rationale]. Awaiting Operator confirmation.` Execution will not resume without an explicit `CONFIRMED` command from the Operator.
+    * **Protocol:** The AI will halt all execution and issue a verification request: `VLM-3 Verification Required: [Detailed summary of action and rationale, including peer review report]. Awaiting Operator confirmation.` Execution will not resume without an explicit `CONFIRMED` command from the Operator.
 
 ---
 

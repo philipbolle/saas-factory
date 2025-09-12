@@ -1,28 +1,27 @@
 SaaS Factory - Product Roadmap (v2.0)
 
-### CAMPAIGN 1: The SaaS Factory Core (STATUS: ACTIVE)
-**Objective:** To build the foundational, AI-assisted, and scalable SaaS development system.
+### CAMPAIGN 1: The Flagship Product (STATUS: ACTIVE)
+**Objective:** To build a single, enterprise-grade SaaS product that will serve as the validation engine for all future systems. The "SaaS Factory" will be forged from the successful patterns and components of this flagship application.
 
 **Key Missions (Mandated Operations):**
 
-* **Phase 1: Operator-Assisted Core:**
-    * [ ] **Mission SF-0.5:** Develop AI Competency Benchmarks: Create a suite of tests to validate the AI's capabilities on small, isolated tasks before granting it higher levels of autonomy.
-    * [ ] **Mission SF-01:** Build the core multi-agent framework with a defined Verification Level Matrix (VLM).
-    * [ ] **Mission SF-02:** Create a universal scaffolding tool that can be manually configured and deployed by the Operator.
-    * [ ] **Mission SF-03:** Establish a semi-automated CI/CD pipeline with manual triggers.
-* **Phase 2: Agentic Core:**
-    * [ ] **Mission SF-04:** Evolve the multi-agent framework to autonomously handle VLM-1 and VLM-2 tasks.
-    * [ ] **Mission SF-05:** Enhance the scaffolding tool to generate a verified **Minimum Viable Product (MVP) Core** (including auth, database, and UI shell) with a single command.
-    * [ ] **Mission SF-06:** Implement a fully automated, end-to-end CI/CD pipeline with VLM-3 hard halts before production deployment.
+* **Phase 1: Operator-Led Architecture:**
+    * [ ] **Mission FP-01:** Operator to design and implement the core backend abstraction layer.
+    * [ ] **Mission FP-02:** Operator to establish the initial, secure CI/CD pipeline and testing framework.
+* **Phase 2: AI-Assisted Development:**
+    * [ ] **Mission FP-03:** Develop AI Competency Benchmarks within the context of the flagship product's codebase.
+    * [ ] **Mission FP-04:** Build the core application features (auth, database, UI shell) using the VLM 2.1 protocols.
+    * [ ] **Mission FP-05:** Achieve a production-ready MVP of the flagship product.
 
-CAMPAIGN 2: The Autonomous Operations Suite (STATUS: PENDING)
-Objective: To create an autonomous, AI-driven suite that manages and scales all operational aspects of a deployed SaaS product, from marketing to legal.
+### CAMPAIGN 2: The SaaS Factory Core (STATUS: PENDING)
+**Objective:** To extract, generalize, and automate the battle-tested patterns from the Flagship Product to create the foundational SaaS development system.
 
-Key Missions (Mandated Operations):
+**Key Missions (Mandated Operations):**
+* [ ] **Mission SF-01:** Refactor the flagship's core modules into a universal scaffolding tool.
+* [ ] **Mission SF-02:** Evolve the AI framework to autonomously handle VLM-1 and VLM-2 tasks within the new factory context.
+* [ ] **Mission SF-03:** Implement a fully automated, end-to-end CI/CD pipeline with VLM-3 hard halts.
 
-[ ] Mission AOS-01: Automated Marketing Engine: Develop and deploy a system that autonomously creates, executes, and optimizes marketing campaigns.
-[ ] Mission AOS-02: Legal and Compliance Agent: Build an AI agent to handle legal documentation, compliance checks, and contract generation for new ventures.
-[ ] Mission AOS-03: Financial & Growth Analytics: Integrate an autonomous system for real-time financial tracking, forecasting, and strategic growth analysis.
+**(Note: Campaigns 3, 4, and 5 - formerly Autonomous Operations, Strategic Evolution, etc. - are now designated as `ENTERPRISE PHASE II` and are PENDING the successful completion of Campaigns 1 and 2.)**
 
 CAMPAIGN 3: The Command Console V2 (STATUS: PENDING)
 Objective: To refactor the authenticated user dashboard into a professional-grade, data-dense analysis tool that provides real-time, actionable intelligence.
