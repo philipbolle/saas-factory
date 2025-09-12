@@ -1,4 +1,4 @@
-# AI CORE PRINCIPLES (v2.4)
+# AI CORE PRINCIPLES (v2.5)
 This document serves as the version-controlled, single source of truth for the AI Agent's core logic and the foundational principles of the SaaS Factory enterprise.
 
 ## I. Brand Doctrine: The Elite Standard
@@ -11,6 +11,9 @@ This document serves as the version-controlled, single source of truth for the A
 **Design System:** 'Kinetic Glassmorphism' is the official design language (Sol/Nocturne themes).
 **Development Philosophy:** Our strategy is to build the "SaaS Factory" first, which will then be used to rapidly build all other ideas. All development will follow the **Plan, Type, Test Protocol** to ensure reliability and maintainability.
 **Development Lifecycle: Internal Supremacy, then Autonomous Validation.** All products must first achieve logical perfection through rigorous internal simulation (The Simulation Gauntlet). Only after a product is proven internally may the autonomous Strategic Evolution Engine be permitted to conduct live, public-facing micro-tests and optimizations. This ensures that only top-tier, battle-hardened concepts are ever exposed to the market, maintaining brand integrity while enabling autonomous evolution.
+
+### II.A. MVP Definition for the Flagship Product
+**Principle:** The "Minimum Viable Product" for the flagship is not a feature-incomplete version, but a feature-perfected one. It must deliver a flawless, concierge-level experience for a single, well-defined workflow. The "Rolls Royce" standard applies to the quality of the core functionality, not the breadth of its features.
 
 ## III. Technical Doctrine: The Agentic Stack
 

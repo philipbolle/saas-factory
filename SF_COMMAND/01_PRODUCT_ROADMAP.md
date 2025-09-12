@@ -1,4 +1,4 @@
-# SaaS Factory - Product Roadmap (v2.5)
+# SaaS Factory - Product Roadmap (v2.6)
 
 ### CAMPAIGN 1: The Flagship Product (STATUS: ACTIVE)
 **Objective:** To build a single, enterprise-grade SaaS product that will serve as the validation engine for all future systems. The "SaaS Factory" will be forged from the successful patterns and components of this flagship application.
@@ -8,16 +8,19 @@
 * **Phase 1: Foundational Readiness & Architecture**
     * [ ] **Mission FP-00: Foundational Readiness:** Pass all items in the Pre-Mission Readiness Protocol (Stop/Go Checklist) as defined in the Grand Unified Doctrine.
     * [ ] **Mission FP-01:** Operator to design and implement the core backend abstraction layer.
+        * **NOTE:** A clear timeline and set of deliverables for this mission are required to avoid blocking AI progress.
     * [ ] **Mission FP-02:** Operator to establish the initial, secure CI/CD pipeline and testing framework.
+        * **NOTE:** A clear timeline and set of deliverables for this mission are required to avoid blocking AI progress.
 * **Phase 2: AI-Assisted Development & Internal Validation**
     * [ ] **Mission FP-03:** Develop AI Competency Benchmarks within the context of the flagship product's codebase.
-    * [ ] **Mission FP-04:** Build the core application features (auth, database, UI shell) using the VLM 2.1 protocols.
     * [ ] **Mission FP-04.5 (Upgraded): The Simulation Gauntlet:** The AI must build and run an automated test harness that proves the architecture's resilience against catastrophic failure scenarios. The system must pass all simulations to be considered viable. The gauntlet must include, at a minimum:
         * **DB Outage Simulation:** System aborts gracefully and recovers without data corruption when the database connection is severed during a live transaction.
         * **Cost Explosion Simulation:** System automatically halts jobs and alerts the Operator when a simulated runaway process exceeds predefined daily cost caps.
         * **API Key Abuse Simulation:** System correctly rate-limits, alerts, and provides a mechanism to revoke a key under a simulated high-frequency attack.
         * **Backup & Restore Simulation:** System demonstrates a successful restoration of a deleted tenant from a backup within a documented Service Level Agreement (SLA).
         * **Adversarial Security Simulation:** System successfully resists a battery of automated SQL injection and XSS attacks from a secondary AI agent.
+    * [ ] **Mission FP-04:** Build the core application features (auth, database, UI shell) using the VLM 2.1 protocols.
+    * [ ] **Mission FP-04.7: Minimum Viable Feedback:** Implement a basic, frictionless in-app feedback mechanism to establish an early customer feedback loop.
     * [ ] **Mission FP-05:** Achieve a production-ready MVP of the flagship product.
 
 ### CAMPAIGN 2: The SaaS Factory Core (STATUS: PENDING)
