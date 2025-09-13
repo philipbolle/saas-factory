@@ -1,4 +1,4 @@
-# The Grand Unified Doctrine (v2.6)
+# The Grand Unified Doctrine (v2.7)
 
 This document codifies the operational protocols governing the collaboration between the Operator (Philip Bolle) and the AI Agent (Gemini). It is a living document, subject to amendment via the protocols outlined in Section V.
 
@@ -29,6 +29,9 @@ No mission within any campaign may be initiated until the system passes the foll
 * **Security Scan:** An automated scan (`npm audit` or `snyk test`) must report zero critical vulnerabilities or committed secrets. **PASS/FAIL**
 * **Budget Safety Net:** Cloud cost alerts and API usage quotas must be confirmed as active and enforced. **PASS/FAIL**
 * **VLM-3 Policy:** The VLM-3 Hard Halt policy must be documented and enforceable. **PASS/FAIL**
+
+### SECTION II.B: The Vanguard Protocol
+To maximize efficiency and uphold the "frictionless" standard, the following protocol is enacted: When implementing a new technology or a feature with predictable integration challenges (e.g., CI/CD setup, new libraries with required boilerplate), the AI will proactively bundle all necessary configuration, boilerplate, and corrective actions into a single, comprehensive VLM-2 notification. This "Vanguard" action anticipates and neutralizes common friction points before they manifest, moving from a reactive to a proactive implementation strategy.
 
 ---
 
