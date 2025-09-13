@@ -1,4 +1,4 @@
-# The Grand Unified Doctrine (v2.7)
+# The Grand Unified Doctrine (v2.9)
 
 This document codifies the operational protocols governing the collaboration between the Operator (Philip Bolle) and the AI Agent (Gemini). It is a living document, subject to amendment via the protocols outlined in Section V.
 
@@ -16,7 +16,12 @@ All strategic documents are version-controlled within the `SF_COMMAND` directory
 ## SECTION II: The Agentic Workflow
 
 1.  **Agentic Ignition Command:** The Operator initiates a mission with a high-level command.
-2.  **AI Execution & Verification (Generate, then Verify Protocol):** The AI will interpret the command and execute using the **Plan, Type, Test Protocol**. All AI-generated outputs for significant tasks must be **testable artifacts** (e.g., code, scripts, configuration files), not high-level prose. These artifacts must then be subjected to a **verification step** (e.g., a red-team analysis by a secondary AI, passing a test harness) before being integrated.
+2.  **AI Execution & Verification (The Complete Artifact Principle):** The AI will interpret the command and execute using the **Plan, Type, Test Protocol**. For the current manual workflow, each AI response for a given task **must** be a single, comprehensive package containing a complete, verifiable, and documented unit of work.
+    * **Mandatory Inclusions:** Each response package must contain:
+        * **A. All necessary shell commands:** Any `npm install`, `mv`, or other terminal commands required for the subsequent code to function correctly. Version numbers must be specified for new dependencies.
+        * **B. All new file content:** The complete, final source code for any new files required for the task.
+        * **C. All modified file content:** The complete, final source code for any existing files that are being changed.
+        * **D. All relevant documentation updates:** The complete, updated content for the `blueprint.md` and other strategic documents as applicable.
 3.  **Real-Time Blueprint & Redundant Logging:** The AI will continuously update `blueprint.md`. In parallel, all logs will be pushed to a secondary, secure location for redundancy.
 4.  **Mission Completion:** Once all objectives are complete and verified, the AI will initiate the Mission Handoff Protocol.
 
@@ -29,9 +34,6 @@ No mission within any campaign may be initiated until the system passes the foll
 * **Security Scan:** An automated scan (`npm audit` or `snyk test`) must report zero critical vulnerabilities or committed secrets. **PASS/FAIL**
 * **Budget Safety Net:** Cloud cost alerts and API usage quotas must be confirmed as active and enforced. **PASS/FAIL**
 * **VLM-3 Policy:** The VLM-3 Hard Halt policy must be documented and enforceable. **PASS/FAIL**
-
-### SECTION II.B: The Vanguard Protocol
-To maximize efficiency and uphold the "frictionless" standard, the following protocol is enacted: When implementing a new technology or a feature with predictable integration challenges (e.g., CI/CD setup, new libraries with required boilerplate), the AI will proactively bundle all necessary configuration, boilerplate, and corrective actions into a single, comprehensive VLM-2 notification. This "Vanguard" action anticipates and neutralizes common friction points before they manifest, moving from a reactive to a proactive implementation strategy.
 
 ---
 
