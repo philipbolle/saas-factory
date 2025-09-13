@@ -9,7 +9,8 @@
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "test": "jest",
-    "test:e2e": "cypress open"
+    "test:e2e": "cypress open",
+    "test:e2e:headless": "cypress run"
   },
   "dependencies": {
     "firebase": "^12.2.1",
