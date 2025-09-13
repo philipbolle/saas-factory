@@ -1,5 +1,5 @@
 // tests/authService.test.ts
-import { Auth, User } from "firebase/auth";
+import { User } from "firebase/auth"; // 'Auth' type removed as it was unused
 import { authService } from "../src/services/authService";
 
 // Mock Firebase Auth methods that are used in authService

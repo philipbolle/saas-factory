@@ -8,18 +8,16 @@
 * **Phase 1: Foundational Readiness & Architecture**
     * [X] **Mission FP-00: Foundational Readiness:** Pass all items in the Pre-Mission Readiness Protocol (Stop/Go Checklist) as defined in the Grand Unified Doctrine.
     * [X] **Mission FP-01 (AI-Led):** Implement the core backend abstraction layer based on Operator-provided specifications.
-        * **NOTE:** This mitigates the Operator bottleneck. The Operator provides the architectural blueprint; the AI executes.
-    * [ ] **Mission FP-02 (AI-Led):** Establish the initial, secure CI/CD pipeline and testing framework based on Operator-provided specifications.
-        * **NOTE:** This mitigates the Operator bottleneck. The Operator provides the DevOps strategy; the AI executes.
+    * [X] **Mission FP-02 (AI-Led):** Establish the initial, secure CI/CD pipeline and testing framework based on Operator-provided specifications.
 * **Phase 2: AI-Assisted Development & Internal Validation**
     * [ ] **Mission FP-03:** Develop AI Competency Benchmarks within the context of the flagship product's codebase.
-    * [ ] **Mission FP-04.5 (Upgraded): The Simulation Gauntlet:** The AI must build and run an automated test harness that proves the architecture's resilience against catastrophic failure scenarios. The system must pass all simulations to be considered viable. The gauntlet must include, at a minimum:
+    * [ ] **Mission FP-04.5 (Upgraded): The Simulation Gauntlet:** The AI must build and run an automated test harness that proves the architecture's resilience against catastrophic failure scenarios. The system must pass all simulations to be considered viable.
         * **DB Outage Simulation:** System aborts gracefully and recovers without data corruption when the database connection is severed during a live transaction.
         * **Cost Explosion Simulation:** System automatically halts jobs and alerts the Operator when a simulated runaway process exceeds predefined daily cost caps.
         * **API Key Abuse Simulation:** System correctly rate-limits, alerts, and provides a mechanism to revoke a key under a simulated high-frequency attack.
         * **Backup & Restore Simulation:** System demonstrates a successful restoration of a deleted tenant from a backup within a documented Service Level Agreement (SLA).
         * **Adversarial Security Simulation:** System successfully resists a battery of automated SQL injection and XSS attacks from a secondary AI agent.
-    * [ ] **Mission FP-04:** Build the core application features (auth, database, UI shell) using the VLM 2.1 protocols.
+    * [X] **Mission FP-04:** Build the core application features (auth, database, UI shell) using the VLM 2.1 protocols.
     * [ ] **Mission FP-04.7 (NEW): Minimum Viable Feedback:** Implement a basic, frictionless in-app feedback mechanism to establish an early customer feedback loop, in line with the MVE doctrine.
     * [ ] **Mission FP-05:** Achieve a production-ready MVE of the flagship product.
 
