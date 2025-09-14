@@ -1,4 +1,4 @@
-# SaaS Factory - Mission Log (v1.3)
+# SaaS Factory - Mission Log (v1.4)
 This document is the official, version-controlled archive of all SaaS Factory campaigns and their outcomes.
 
 ## CAMPAIGN: Initial Systems Setup
@@ -40,3 +40,11 @@ The system now has a functional, albeit minimal, user-facing interface with a co
 - **Configuration & Refactoring:** Corrected multiple configuration files (`.eslintrc.cjs`, `cypress.config.cjs`, `tailwind.config.js`, `postcss.config.js`). Refactored the authentication context into a multi-file, single-responsibility structure to adhere to React best practices and resolve all `react-refresh` warnings.
 - **E2E Workflow Hardening:** Integrated the `start-server-and-test` utility to create a robust, reliable, and self-contained end-to-end testing script, resolving all `ECONNREFUSED` errors.
 The system is now fully compliant with the "Pre-Mission Readiness Protocol" and demonstrates a stable, professional-grade foundation.
+
+**MISSION:** FP-04.5: The Simulation Gauntlet
+**OUTCOME:** SUCCESS
+**AAR:**
+- **Harness Construction:** Developed a suite of failure-simulation tests for critical backend services (`authService`, `firestoreService`) to act as a "gauntlet" for architectural resilience.
+- **Vulnerability Detection:** The gauntlet immediately identified a critical vulnerability: the `firestoreService` lacked graceful error handling, which would have led to unhandled promise rejections and application instability under real-world failure conditions.
+- **Architectural Hardening:** Refactored the `firestoreService` to include robust `try...catch` blocks, ensuring that backend failures are now handled gracefully without crashing the client application.
+- **Verification:** The entire test suite, including the new failure simulations, now passes, providing doctrinal certainty that the system is resilient to these specific catastrophic failure scenarios. This mission has validated the core tenets of Test-Informed Development (TID).
