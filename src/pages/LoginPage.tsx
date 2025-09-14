@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useAuth } from '../context/AuthContext';
+import { useAuth } from '../hooks/useAuth';
 
 const LoginPage: React.FC = () => {
   const { signIn } = useAuth();
@@ -16,7 +16,7 @@ const LoginPage: React.FC = () => {
   return (
     <div className="text-center">
       <h1 className="text-2xl font-bold mb-4">Login</h1>
-      <button 
+      <button
         onClick={handleSignIn}
         className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded"
       >

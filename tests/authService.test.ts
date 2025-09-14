@@ -1,5 +1,5 @@
 // tests/authService.test.ts
-import { User } from "firebase/auth"; // 'Auth' type removed as it was unused
+import { User } from "firebase/auth";
 import { authService } from "../src/services/authService";
 
 // Mock Firebase Auth methods that are used in authService
@@ -11,13 +11,15 @@ jest.mock("firebase/auth", () => ({
   GoogleAuthProvider: jest.fn(),
 }));
 
+// Mock the config module
+jest.mock('../src/config');
+
 const { signInWithPopup, signOut } = jest.requireMock("firebase/auth");
 
 describe("AuthService", () => {
   let testAuthService: typeof authService;
 
   beforeEach(() => {
-    // It's a singleton, so we can just use the imported service
     testAuthService = authService;
   });
 
@@ -38,11 +40,17 @@ describe("AuthService", () => {
 
   // Test for signInWithGoogle failure
   test("should return null if Google sign-in fails", async () => {
+    // Suppress the expected console.error message for this test
+    const consoleErrorSpy = jest.spyOn(console, 'error').mockImplementation(() => {});
+    
     (signInWithPopup as jest.Mock).mockRejectedValue(new Error("Sign-in failed"));
 
     const user = await testAuthService.signInWithGoogle();
 
     expect(user).toBeNull();
+
+    // Restore the original console.error
+    consoleErrorSpy.mockRestore();
   });
 
   // Test for signOut

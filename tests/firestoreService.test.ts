@@ -1,5 +1,5 @@
 // tests/firestoreService.test.ts
-import { doc, getDoc } from "firebase/firestore"; // Unused imports removed
+import { doc, getDoc } from "firebase/firestore";
 import { firestoreService } from "../src/services/firestoreService";
 
 const testFirestoreService = firestoreService;
@@ -11,6 +11,9 @@ jest.mock("firebase/firestore", () => ({
   setDoc: jest.fn(),
   doc: jest.fn(),
 }));
+
+// Mock the config module
+jest.mock('../src/config');
 
 describe("FirestoreService", () => {
   afterEach(() => {
